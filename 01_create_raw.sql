@@ -1,0 +1,1 @@
+create or replace table raw_jobs as select * from read_csv_auto('data/sample_jobs.csv');
