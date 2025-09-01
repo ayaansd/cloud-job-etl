@@ -1,0 +1,1 @@
+create or replace table jobs_enriched as select *, (salary_max - salary_min) as salary_spread, (salary_max+salary_min)/2.0 as salary_mid from jobs_titles;

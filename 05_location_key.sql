@@ -1,0 +1,1 @@
+create or replace table jobs_geo as select *, concat(city, ', ', state) as location from jobs_enriched;

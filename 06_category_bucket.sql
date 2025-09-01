@@ -1,0 +1,1 @@
+create or replace table jobs_bucket as select *, case when title_lc like '%engineer%' then 'engineering' when title_lc like '%scientist%' then 'science' when title_lc like '%analyst%' then 'analytics' else 'other' end as role_bucket from jobs_geo;

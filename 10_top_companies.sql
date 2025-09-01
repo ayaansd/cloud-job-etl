@@ -1,0 +1,1 @@
+create or replace table agg_top_companies as select company, count(*) cnt, round(avg(salary_mid)) avg_salary from fact_jobs group by 1 order by cnt desc;

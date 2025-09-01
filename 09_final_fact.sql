@@ -1,0 +1,1 @@
+create or replace table fact_jobs as select job_id, company_norm as company, title, role_bucket, location, posted_date, salary_min, salary_max, salary_mid from jobs_city_norm;

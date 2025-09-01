@@ -1,0 +1,1 @@
+create or replace table jobs_titles as select *, lower(title) as title_lc from raw_jobs_cast;

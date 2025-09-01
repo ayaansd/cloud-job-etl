@@ -1,0 +1,1 @@
+create or replace table raw_jobs_cast as select job_id::INT, title, company, city, state, posted_date::DATE as posted_date, salary_min::INT, salary_max::INT, employment_type, category, description from raw_jobs;

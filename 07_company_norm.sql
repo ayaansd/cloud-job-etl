@@ -1,0 +1,1 @@
+create or replace table jobs_company as select *, regexp_replace(company, '\\.?com\\.? services llc','', 'i') as company_norm from jobs_bucket;

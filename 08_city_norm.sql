@@ -1,0 +1,1 @@
+create or replace table jobs_city_norm as select *, replace(city, 'San Jose','San José') as city_norm from jobs_company;
